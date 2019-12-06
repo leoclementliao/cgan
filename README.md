@@ -16,7 +16,7 @@ With this technology, we can inject CO<sub>2</sub> into oil fields to increase o
 Since gas molecules are adsorbed at the surface of the rocks pores at the nanometer scale, the velocity of the gas molecules after reflection at the interface will change（like the following figure）.
 This phenomenon can fundamentally affect the diffusion of gas molecules.
 
-<img align="center" src="./collisionCO23D_sansCoor.gif"  width="600" hight="400" />
+<img align="center" src="./collisionCO23D_sansCoor.gif"  width="600" hight="200" />
 
 ## Organization fo the repository
 
