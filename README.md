@@ -35,7 +35,8 @@ pip3 install -r requirements.txt
 ### 2) Run GAN
 
 ```
-python3 app.py
+python3 cWGAN.py
+python3 WGAN.py
 ```
 
 ### 3) More details see notebooks
