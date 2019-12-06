@@ -1,18 +1,18 @@
-# Implamentation of conditional WGAN on tensorflow 2.X
+# Implamentation of conditional WGAN by Tensorflow 2.X
 Using conditional GAN to simulate molecular diffuse reflection, 
-the condition is the incident velocity vector [cx, cy, cz]$_{in}$ of gas molecule,
-and the output of the generator is the reflection velocity vector [cx, cy, cz]$_{out}$ of gas molecule.
+the condition is the incident velocity vector *[cx, cy, cz]*~in~ of gas molecule,
+and the output of the generator is the reflection velocity vector *[cx, cy, cz]*~out~ of gas molecule.
 The cGAN is using the
 improved [Wasserstein GAN (WGAN-GP)](https://arxiv.org/abs/1704.00028). Based on the codes from the
 repositories of [Jan Kremer](https://https://github.com/kremerj/gan) (1D Gaussian).
 ![alt text](./cGAN_train.gif) 
 In the above figure, the horizontal axis represents the incident values and the vertical axis represents the reflection values.
 The 3 first figures show velocity at x, y, z direction, the 4th figure shows kinetic energy 
-($Ek = cx^2+cy^2+cz^2$). The last figure is the negative loss of the discriminator.
+(*E*~k~ = *cx*^2^+*cy*^2^+*cz*^2^$). The last figure is the negative loss of the discriminator.
 
 ## Context
 In the shale gas industry, there is a technology called "Enhanced oil recovery". 
-With this technology, we can inject CO$_2$ into oil fields to increase oil or natural gas production and store CO$_2$ both to maintain the mechanical stability of the reservoir.
+With this technology, we can inject CO~2~ into oil fields to increase oil or natural gas production and store CO~2~ both to maintain the mechanical stability of the reservoir.
 Since gas molecules are adsorbed at the surface of the rocks pores at the nanometer scale, the velocity of the gas molecules after reflection at the interface will change（like the following figure）.
 This phenomenon can fundamentally affect the diffusion of gas molecules.
 <img src="./collisionCO23D_sansCoor.gif"  width="500" />
