@@ -5,8 +5,7 @@ the condition is the molecular incident velocity vector [*cx*', *cy*', *cz*']<su
 and the output of the generator is the molecular reflection velocity vector [*cx*, *cy*, *cz*]<sub>out</sub>. The cGAN is using the improved [Wasserstein GAN (WGAN-GP)](https://arxiv.org/abs/1704.00028). Based on the codes from the
 repositories of [Jan Kremer](https://https://github.com/kremerj/gan) (1D Gaussian).
 
-<img src="./demo_image/collisionCO23D_sansCoor.gif" width="600" /> 
-<img src="./demo_image/fig-TN_plan.jpg" width="400" /> 
+<img src="./demo_image/collisionCO23D_sansCoor.gif" width="400" />  <img src="./demo_image/fig-TN_plan.jpg" width="200" /> 
 
 In the following figure, the horizontal axis represents the incident values and the vertical axis represents the reflection values.
 The 3 first figures show velocity at x, y, z direction, the 4th figure shows kinetic energy 
