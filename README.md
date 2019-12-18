@@ -1,14 +1,15 @@
 # Implamentation of conditional WGAN by Tensorflow 2.X
-Using conditional GAN to simulate molecular diffuse reflection, 
-the condition is the incident velocity vector [*cx*, *cy*, *cz*]<sub>in</sub> of gas molecule,
-and the output of the generator is the reflection velocity vector [*cx*, *cy*, *cz*]<sub>out</sub> of gas molecule.
-The cGAN is using the
+
+Using conditional GAN to simulate molecular diffused reflection, 
+the condition is the molecular incident velocity vector [*cx*', *cy*', *cz*']<sub>in</sub>,
+and the output of the generator is the molecular reflection velocity vector [*cx*, *cy*, *cz*]<sub>out</sub>. The cGAN is using the
 improved [Wasserstein GAN (WGAN-GP)](https://arxiv.org/abs/1704.00028). Based on the codes from the
 repositories of [Jan Kremer](https://https://github.com/kremerj/gan) (1D Gaussian).
-![alt text](./cGAN_train.gif) 
-In the above figure, the horizontal axis represents the incident values and the vertical axis represents the reflection values.
+<img src="./demo_image/collisionCO23D_sansCoor.gif" width="600" /> <img src="./demo_image/fig-TN_plan.jpg" width="400" /> 
+In the following figure, the horizontal axis represents the incident values and the vertical axis represents the reflection values.
 The 3 first figures show velocity at x, y, z direction, the 4th figure shows kinetic energy 
 (*E*<sub>k</sub> = cx<sup>2</sup>+cy<sup>2</sup>+cz<sup>2</sup>). The last figure is the negative loss of the discriminator.
+![alt text](./demo_image/cGAN_train.gif) 
 
 ## Context
 In the shale gas industry, there is a technology called "Enhanced oil recovery". 
@@ -16,7 +17,6 @@ With this technology, we can inject CO<sub>2</sub> into oil fields to increase o
 Since gas molecules are adsorbed at the surface of the rocks pores at the nanometer scale, the velocity of the gas molecules after reflection at the interface will change（like the following figure）.
 This phenomenon can fundamentally affect the diffusion of gas molecules.
 
-<img src="./collisionCO23D_sansCoor.gif" align="center" width="700" height="400" />
 
 ## Organization fo the repository
 
